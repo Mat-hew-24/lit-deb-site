@@ -27,7 +27,7 @@ export default function Header({ flag, setFlag }: Headerprop) {
         {btns.map((i, idx) => (
           <button
             key={idx}
-            className={`transition-transform duration-150 py-2 px-5 ease-in-out hover:[transform:rotate(-24deg)] cursor-pointer ${
+            className={`transition-transform duration-150 py-1 px-1 sm:px-2 sm:py-1 md:px-3 md:py-2 lg:px-4 lg:py-2 ease-in-out hover:[transform:rotate(-24deg)] cursor-pointer ${
               idx + 1 === flag ? "bg-[#351c04] text-[rgb(255,255,157)]" : ""
             }`}
             onClick={() => {
