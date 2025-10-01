@@ -6,15 +6,34 @@ const spe = Special_Elite({
   display: "swap",
 });
 
-export default function Header() {
+type Headerprop = {
+  setFlag: (x: number) => void;
+};
+
+export default function Header({ setFlag }: Headerprop) {
   return (
     <>
       <div
-        className={`absolute top-0 right-0 ${spe.className} left-0 gap-6 sm:gap-8 md:gap-10 lg:gap-22 shadow-[0px_5px_8px_-5px_rgba(0,0,0,1)] text-2xl sm:text-3xl md:text-3xl lg:text-4xl bg-[rgb(255,255,157)] flex justify-center items-center shadow-amber-200 rounded-b-3xl`}
+        className={`absolute top-0 right-25 ${spe.className} left-25 gap-6 sm:left-5 sm:right-5 sm:gap-8  md:left-10 md:gap-10 md:right-10 lg:left-20 lg:right-20 lg:gap-22 py-4 shadow-[0px_5px_8px_-5px_rgba(0,0,0,1)] text-2xl sm:text-3xl md:text-3xl lg:text-4xl bg-[rgb(0,0,0)] flex justify-center items-center shadow-white rounded-b-4xl`}
       >
-        <button className="text-black">Home</button>
-        <button className="text-black">Pics</button>
-        <button className="text-black">About</button>
+        <button
+          className="text-white transition-transform duration-150 ease-in-out hover:[transform:rotate(-24deg)] cursor-pointer"
+          onClick={() => setFlag(1)}
+        >
+          Home
+        </button>
+        <button
+          className="text-white transition-transform duration-150 ease-in-out hover:[transform:rotate(-24deg)] cursor-pointer"
+          onClick={() => setFlag(2)}
+        >
+          Pics
+        </button>
+        <button
+          className="text-white transition-transform duration-150 ease-in-out hover:[transform:rotate(-24deg)] cursor-pointer"
+          onClick={() => setFlag(3)}
+        >
+          About
+        </button>
       </div>
     </>
   );
