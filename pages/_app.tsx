@@ -1,6 +1,8 @@
 import "@/styles/globals.css";
+import { AppProps } from "next/app";
 import Header from "./Header";
 import { useState } from "react";
+
 
 export default function App() {
   const [flag, setFlag] = useState<number>(1);

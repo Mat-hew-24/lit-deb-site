@@ -1,3 +1,4 @@
+import Link from "next/dist/client/link";
 import { Special_Elite } from "next/font/google";
 
 const spe = Special_Elite({
