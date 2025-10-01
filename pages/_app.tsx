@@ -3,14 +3,24 @@ import Header from "./Header";
 import { useState } from "react";
 import Pics from "./Pics";
 
+const links: string[] = [
+  "/pictures/placeholder.webp",
+  "/pictures/placeholder.webp",
+  "/pictures/placeholder.webp",
+  "/pictures/placeholder.webp",
+  "/pictures/placeholder.webp",
+  "/pictures/placeholder.webp",
+  "/pictures/placeholder.webp",
+];
+
 export default function App() {
   const [flag, setFlag] = useState<number>(1);
   return (
     <>
       <div className="relative">
         <Header setFlag={setFlag}></Header>
-        {flag === 2 && <Pics></Pics>}
+        {flag === 2 && <Pics links={links}></Pics>}
       </div>
     </>
   );
-}  
+}

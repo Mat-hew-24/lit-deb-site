@@ -3,3 +3,12 @@
 :root {
   background-color: #351c04;
 }
+
+.cstm-border {
+  position: relative;
+  margin: auto;
+  border: 24px solid;
+  border-image: url(https://skullctf.com/images/skull-border.svg);
+  border-image-slice: 32;
+  border-image-repeat: round;
+}
