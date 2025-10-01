@@ -6,11 +6,14 @@ const spe = Special_Elite({
   display: "swap",
 });
 
+const btns: string[] = ["Home", "Pics", "About"];
+
 type Headerprop = {
+  flag: number;
   setFlag: (x: number) => void;
 };
 
-export default function Header({ setFlag }: Headerprop) {
+export default function Header({ flag, setFlag }: Headerprop) {
   return (
     <>
       <div
@@ -21,25 +24,19 @@ export default function Header({ setFlag }: Headerprop) {
           `}
       >
         {/*NAVBAR...*/}
-        <button
-          className="transition-transform duration-150 ease-in-out hover:[transform:rotate(-24deg)] cursor-pointer"
-          onClick={() => setFlag(1)}
-        >
-          Home
-        </button>
-
-        <button
-          className="transition-transform duration-150 ease-in-out hover:[transform:rotate(-24deg)] cursor-pointer"
-          onClick={() => setFlag(2)}
-        >
-          Pics
-        </button>
-        <button
-          className="transition-transform duration-150 ease-in-out hover:[transform:rotate(-24deg)] cursor-pointer"
-          onClick={() => setFlag(3)}
-        >
-          About
-        </button>
+        {btns.map((i, idx) => (
+          <button
+            key={idx}
+            className={`transition-transform duration-150 py-2 px-5 ease-in-out hover:[transform:rotate(-24deg)] cursor-pointer ${
+              idx + 1 === flag ? "bg-[#351c04] text-[rgb(255,255,157)]" : ""
+            }`}
+            onClick={() => {
+              setFlag(idx + 1);
+            }}
+          >
+            {i}
+          </button>
+        ))}
       </div>
     </>
   );

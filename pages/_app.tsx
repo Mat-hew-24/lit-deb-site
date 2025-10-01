@@ -18,8 +18,9 @@ export default function App() {
   return (
     <>
       <div className="relative">
-        <Header setFlag={setFlag}></Header>
+        <Header flag={flag} setFlag={setFlag}></Header>
         {flag === 2 && <Pics links={links}></Pics>}
+        {flag === 3 && <></>}
       </div>
     </>
   );

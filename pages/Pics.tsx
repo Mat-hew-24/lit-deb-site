@@ -16,7 +16,7 @@ export default function Pics({ links }: PicsProp) {
           className="w-full cursor-pointer 
           [border:12px_solid_#ffff9f] 
           p-2 rounded-lg overflow-hidden 
-          transition duration-300 ease-in-out hover:scale-105 
+          transition duration-250 ease-linear hover:scale-105 
           shadow-[0_25px_20px_rgba(0,0,0,1),20px_0px_20px_rgba(0,0,0,0.3)]
         "
           key={idx}
