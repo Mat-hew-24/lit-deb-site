@@ -20,7 +20,7 @@ export default function App() {
       <div className="relative">
         <Header flag={flag} setFlag={setFlag}></Header>
         {flag === 2 && <Pics links={links}></Pics>}
-        {flag === 3 && <></>}
+        {flag === 3 && <p>Hello</p>}
       </div>
     </>
   );
