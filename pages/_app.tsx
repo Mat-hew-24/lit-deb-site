@@ -2,6 +2,7 @@ import "@/styles/globals.css";
 import Header from "./Header";
 import { useState } from "react";
 import Pics from "./Pics";
+import About from "./About";
 
 const links: string[] = [
   "/pictures/placeholder.webp",
@@ -20,6 +21,7 @@ export default function App() {
       <div className="relative">
         <Header setFlag={setFlag}></Header>
         {flag === 2 && <Pics links={links}></Pics>}
+        {flag === 3 && <About />}
       </div>
     </>
   );
