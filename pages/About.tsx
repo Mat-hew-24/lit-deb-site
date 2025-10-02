@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Cabin } from "next/font/google";
 import { Oswald } from "next/font/google";
 import { Dancing_Script } from "next/font/google";
