@@ -8,7 +8,7 @@ type PicsProp = {
 export default function Pics({ links }: PicsProp) {
   return (
     <div
-      className="flex flex-col space-y-8 gap-10 mb-10 pt-40 w-full max-w-3xl mx-auto items-center 
+      className="flex flex-col space-y-8 gap-10 mb-10 pt-60 w-full max-w-3xl mx-auto items-center 
                        sm:w-11/12 md:w-3/4 lg:w-2/3 xl:w-1/2"
     >
       {links.map((i, idx) => (
