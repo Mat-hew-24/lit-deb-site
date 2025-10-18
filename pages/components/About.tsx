@@ -1,10 +1,9 @@
-import Image from "next/image";
-import { Cabin } from "next/font/google";
+import { Special_Elite } from "next/font/google";
 import { Oswald } from "next/font/google";
 import { Dancing_Script } from "next/font/google";
 import { Typewriter } from "react-simple-typewriter";
 
-const cabin = Cabin({
+const spe = Special_Elite({
   subsets: ["latin"],
   weight: ["400"],
   display: "swap",
@@ -32,7 +31,7 @@ export default function About() {
           className="size-10 sm:size-10 md:size-16 lg:size-20 transform scale-x-[-1]"
         /> */}
         <h1
-          className={`${cabin.className} text-[rgb(255,255,157)] text-2xl sm:text-2xl md:text-4xl lg:text-5xl text-center`}
+          className={`${spe.className} text-[rgb(255,255,157)] text-2xl sm:text-2xl md:text-4xl lg:text-5xl text-center`}
         >
           Literary and Debating Club NITC
         </h1>
