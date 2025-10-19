@@ -19,7 +19,7 @@ export default function Header({ flag, setFlag }: Headerprop) {
       <div
         className={`absolute top-8 right-4 ${spe.className} left-4 gap-6
          sm:left-5 sm:right-5 sm:gap-12  md:left-16 md:gap-10 md:right-10 lg:left-20
-          lg:right-20 lg:gap-45 py-6 shadow-[0px_25px_10px_-5px_rgba(20,20,20,1)]
+          lg:right-20 lg:gap-45 py-3 shadow-[0px_25px_10px_-5px_rgba(20,20,20,1)]
            text-2xl sm:text-3xl md:text-3xl lg:text-4xl bg-[rgb(255,255,157)] flex justify-center items-center 
           `}
       >
@@ -27,8 +27,8 @@ export default function Header({ flag, setFlag }: Headerprop) {
         {btns.map((i, idx) => (
           <button
             key={idx}
-            className={`transition-transform duration-150 py-1 px-1 sm:px-2 sm:py-1 md:px-3 md:py-2 lg:px-4 lg:py-2 ease-in-out hover:[transform:rotate(-24deg)] 
-              hover:scale-110 cursor-pointer ${
+            className={`transition-transform md:scale-75 duration-150 py-1 px-1 sm:px-1 sm:py-1 md:px-2 md:py-2 lg:px-2 lg:py-2 ease-in-out hover:[transform:rotate(-24deg)] 
+              hover:scale-85 sm:scale-90 cursor-pointer ${
                 idx + 1 === flag ? "bg-[#351c04] text-[rgb(255,255,157)]" : ""
               }`}
             onClick={() => {

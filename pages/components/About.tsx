@@ -31,9 +31,9 @@ export default function About() {
           className="size-10 sm:size-10 md:size-16 lg:size-20 transform scale-x-[-1]"
         /> */}
         <h1
-          className={`${spe.className} text-[rgb(255,255,157)] text-2xl sm:text-2xl md:text-4xl lg:text-5xl text-center`}
+          className={`${spe.className} text-[rgb(255,255,157)] text-3xl sm:text-3xl md:text-4xl lg:text-5xl text-center`}
         >
-          Literary and Debating Club NITC
+          NITC Carpe Diem
         </h1>
         {/* <img
           src="/bookturn.gif"
@@ -42,16 +42,18 @@ export default function About() {
         /> */}
       </div>
       <div
-        className={`text-white text-5xl sm:text-5xl md:text-6xl lg:text-8xl text-center ${ds.className} drop-shadow-[0_0_20px_rgba(255,255,255,0.7)]`}
+        className={`text-white text-4xl sm:text-4xl md:text-5xl lg:text-5xl text-center ${ds.className} drop-shadow-[0_0_20px_rgba(255,255,255,0.7)]`}
       >
-        <Typewriter
-          words={[`"Dead, yet louder than the living."`]}
-          loop={1}
-          cursor
-          cursorStyle="|"
-          typeSpeed={70}
-          deleteSpeed={30}
-        />
+        <span className={spe.className}>
+          <Typewriter
+            words={[`"Dead, yet louder than the living."`]}
+            loop={1}
+            cursor
+            cursorStyle="|"
+            typeSpeed={70}
+            deleteSpeed={30}
+          />
+        </span>
       </div>
       {/* <div
         className={`${anek.className} text-[rgb(255,255,157)] mt-10 max-w-3xl mx-auto text-center space-y-4`}
@@ -90,7 +92,7 @@ export default function About() {
             className="hover:scale-125 hover:[transform:rotate(-24deg)] transition size-6 sm:size-8 md:size-12"
           />
         </a>
-        <a
+        {/* <a
           href="https://www.linkedin.com/company/literary-debating-club-nitc/?originalSubdomain=in"
           target="_blank"
           rel="noopener noreferrer"
@@ -111,7 +113,7 @@ export default function About() {
             alt="YouTube"
             className="hover:scale-125 hover:[transform:rotate(-24deg)] transition size-6 sm:size-8 md:size-10"
           />
-        </a>
+        </a> */}
       </div>
     </div>
   );
