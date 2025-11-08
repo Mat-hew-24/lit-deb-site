@@ -10,7 +10,17 @@
 }
 
 :root {
-  background: linear-gradient(90deg, #0a0000, #673608, #0a0000);
+  background: linear-gradient(
+    90deg,
+    #000000,
+    #0a0000,
+    #442208,
+    #553311,
+    #442208,
+    #0a0000,
+    #000000
+  );
   margin: 0;
   padding: 0;
+  min-height: 100vh;
 }
