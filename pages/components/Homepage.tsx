@@ -4,6 +4,7 @@ import Image from 'next/image'
 
 export default function Homepage() {
   const [msg, setMsg] = useState('')
+  console.log('Loaded MONGO_URI:', process.env.MONGO_URI)
 
   const handleSubmit = async () => {
     if (!msg.trim()) {
